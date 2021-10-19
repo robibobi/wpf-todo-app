@@ -11,7 +11,8 @@ namespace TodoApp.Services
 {
     class TodoItemService : ITodoItemService
     {
-        private const string TodoFileName = "Todos.txt";
+        private const string TodoFileExtension = ".txt";
+        private const string TodoFileName = "Todos" + TodoFileExtension;
 
         public IEnumerable<TodoItem> ReadTodos()
         {
